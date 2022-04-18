@@ -133,12 +133,12 @@ const Header = () => {
             <span
                 className={classes.header__optionLineOne}
                 >
-                    Your
+                    Agregar
                 </span>
                 <span
                 className={classes.header__optionLineTwo}
                 >
-                    Prime
+                    Productos
                 </span>
             </div>
             </Link>

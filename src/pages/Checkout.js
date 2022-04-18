@@ -43,10 +43,7 @@ const Checkout = () => {
                     />
                   ))
                 }
-                {/* CheckoutProduct */}  
-                {/* CheckoutProduct */}  
-                {/* CheckoutProduct */}  
-                {/* CheckoutProduct */}  
+            
             </div>
         </div>
       <div className={classes.checkout__right}>

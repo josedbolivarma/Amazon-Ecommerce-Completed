@@ -55,9 +55,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         gap: theme.spacing(2),
-  
-        
-        
     },
     gallery__image: {
         width: '100%',

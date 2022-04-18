@@ -6,6 +6,7 @@ import Register from '../pages/Register';
 import DashboardRoute from './DashboardRoute';
 import PrivateRouters from './PrivateRouters';
 import PublicRouters from './PublicRouters';
+import logo from '../assets/Amazon-logo.png';
 
 const AppRoutes = () => {
   const [checking, setChecking] = useState(true);
@@ -29,7 +30,27 @@ const AppRoutes = () => {
   
   if(checking) {
     return (
-      <h1>Espere...</h1>
+      <div style={{
+        position: 'absolute',
+        backgroundColor: 'rgb(238,127,55)',
+        background: 'linear-gradient(90deg, rgba(238,127,55,1) 0%, rgba(245,113,0,1) 48%, rgba(244,176,53,1) 87%, rgba(245,113,0,1) 100%)',
+        top: '0',
+        bottom: '0',
+        left: '0',
+        right: '0'
+      }}>
+        <div 
+        style={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+        >
+        <img width='200px' height='100px' src={logo} alt='Loader'/>
+        </div>
+      </div>
     )
   }
 
@@ -59,6 +80,8 @@ const AppRoutes = () => {
     </BrowserRouter>
   )
 }
+
+
 
 export default AppRoutes;
 
